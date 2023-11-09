@@ -77,10 +77,13 @@ const searchInput = document.getElementById("search-input");
 const contentContainers = document.querySelectorAll("#main-content");
 const notFoundMessage = document.getElementById("not-found-message");
 
+let resultFound = false;
+let searchPerformed = false;
+
 // Function to perform search
 const performSearch = () => {
     const searchText = searchInput.value.toLowerCase().trim();
-    let resultFound = false;
+    resultFound = false;
 
     contentContainers.forEach(container => {
         const sectionName = container.getAttribute("data-section");
@@ -108,16 +111,33 @@ const performSearch = () => {
         setTimeout(() => {
             notFoundMessage.style.display = "none";
         }, 3000);
+    } else {
+        // Set the searchPerformed flag to true
+        searchPerformed = true;
     }
 };
 
 // Event listener for the search button click
-searchButton.addEventListener("click", performSearch);
+searchButton.addEventListener("click", () => {
+    performSearch();
+    // Reset the searchPerformed flag when a new search is initiated
+    searchPerformed = false;
+});
 
 // Event listener for Enter key press in the search input
 searchInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault(); // Prevent the default form submission behavior
         performSearch();
+        // Reset the searchPerformed flag when a new search is initiated
+        searchPerformed = false;
+    }
+});
+
+// Event listener for scroll
+window.addEventListener("scroll", function () {
+    // If a search has been performed, prevent further scrolling down
+    if (searchPerformed && window.scrollY > 0) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 });
