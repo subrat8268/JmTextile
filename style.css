@@ -30,6 +30,7 @@ body {
 }
 
 .topbar {
+    height: 50px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -45,6 +46,7 @@ body {
     font-weight: 800;
     /* Adjust the height as needed */
 }
+
 .logo a{
     text-decoration: none;
 }
