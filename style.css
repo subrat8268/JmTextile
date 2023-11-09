@@ -264,7 +264,7 @@ h1 {
 /* @media screen and (min-width: 1024px) {} */
 
 /* For Tablet View */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .news-sidebar {
         width: 30%;
     }
@@ -294,10 +294,10 @@ h1 {
         width: 100px;
         padding: 12px 5px;
     }
-} */
+}
 
 /* For Mobile Portrait View */
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .topbar {
         padding: 15px 25px;
     }
@@ -321,9 +321,11 @@ h1 {
         letter-spacing: 2px;
     }
 
-    .news-sidebar {
+
+    /* .news-sidebar {
+        height: calc(100vh - 80px);
         padding: 5px;
-    }
+    } */
 
     .news-sidebar h2 {
         top: -5px;
@@ -365,9 +367,14 @@ h1 {
         font-size: 13px;
         font-weight: 600px;
     }
-} */
-/* @media screen and (max-width: 375px) {
+
+    #main-content{
+        height: calc(100vh - 128.8px);
+    }
+}
+
+@media screen and (max-width: 375px) {
     .navbar-items a {
         font-size: 7px;
     }
-} */
+}
