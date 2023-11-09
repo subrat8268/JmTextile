@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling Website</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+      }
+
+      #topbar {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        height: 50px;
+        width: 100%;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      #sidebar {
+        width: 20%;
+        /* border: 5px solid rgb(50, 40, 40); */
+        /* padding: 20px; */
+        overflow-y: scroll;
+        height: calc(100vh - 70px);
+      }
+
+      .main-content {
+        background-color: beige;
+        height: calc(100vh - 70px);
+        overflow-y: scroll;
+        width: 80%;
+        /* margin-top: 60px; */
+        /* padding: 20px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topbar">Top Bar</div>
+
+    <div class="container">
+      <div class="fixed" id="sidebar">
+          <h2>News & Updates</h2>
+          <p>Top</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>Some content in the sidebar.</p>
+          <p>End</p>
+          <!-- Add more content as needed -->
+      </div>
+
+      <div class="main-content" id="main-content">
+        <h1>Top Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Sdection</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <h1>Main Section</h1>
+        <p>Main content goes here.</p>
+        <h1>End</h1>
+        <!-- Add more content as needed -->
+      </div>
+    </div>
+
+    <script>
+      // Individual scrolling action for sidebar and main section
+      //   var sidebar = document.querySelector("#sidebar");
+      //   var mainContent = document.getElementById("main-content");
+
+      //   mainContent.addEventListener("hover", function () {
+      //     sidebar.classList.add("fixed");
+      //   });
+
+      // //   mainContent.addEventListener("mouseout", function () {
+      // //     sidebar.classList.remove("fixed");
+      // //   });
+
+      //   sidebar.addEventListener("hover", function () {
+      //     mainContent.classList.add("fixed");
+      //   });
+
+      // //   sidebar.addEventListener("mouseout", function () {
+      // //     mainContent.classList.remove("fixed");
+      // //   });
+
+      //   window.onscroll = function () {
+      //     sidebar.scrollTop = window.scrollY;
+      //     mainContent.scrollTop = window.scrollY;
+      //   };
+    </script>
+  </body>
+</html>
