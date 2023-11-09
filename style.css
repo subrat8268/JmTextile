@@ -40,8 +40,8 @@ body {
 
 .topbar {
     height: 50px;
-    top: 0  
-    position: fixed 
+    top: 0;
+    position: fixed ;
     background-color: white;
     display: flex;
     justify-content: space-between;
