@@ -121,5 +121,6 @@ searchInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault(); // Prevent the default form submission behavior
         performSearch();
+        window.scrollTo(0,0) // <-- Scroll to top
     }
 });
