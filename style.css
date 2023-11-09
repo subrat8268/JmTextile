@@ -29,7 +29,19 @@ body {
     background-color: #555;
 }
 
+/* .topbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
 .topbar {
+    height: 50px;
+    top: 0  
+    position: fixed 
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -37,6 +49,11 @@ body {
     padding: 10px 80px;
     /* border-bottom: 1px solid rgb(237, 224, 224); */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+@media screen and (max-width: 768px)
+.topbar {
+    bottom: 0; 
+    top: auto; 
 }
 
 .logo {
