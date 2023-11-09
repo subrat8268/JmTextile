@@ -30,7 +30,6 @@ body {
 }
 
 .topbar {
-    height: 50px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -302,6 +301,7 @@ h1 {
 @media screen and (max-width: 480px) {
     .topbar {
         padding: 15px 25px;
+        min-height: 50px;
     }
 
     .logo {
