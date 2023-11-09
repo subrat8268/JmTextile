@@ -30,6 +30,7 @@ body {
 }
 
 .topbar {
+    position: fixed;
     background-color: white;
     display: flex;
     justify-content: space-between;
