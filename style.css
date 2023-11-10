@@ -41,10 +41,9 @@ body {
 
 .logo {
     height: 42px;
-    /* Adjust the height as needed */
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
 }
 
@@ -73,10 +72,11 @@ body {
     font-size: 40px;
     padding: 10px;
 }
-.main-section{
+
+.main-section {
     height: calc(100vh - 80px);
 }
-    
+
 /* sidebar */
 .news-sidebar {
     background-color: #333;
@@ -89,15 +89,16 @@ body {
 .news-sidebar h2 {
     font-size: 20px;
     margin: 0;
-    background-color: #333; /* Adjust background color to match the sidebar */
-    padding: 3px 0; /* Adjust padding to match the sidebar */
-    z-index: 1; /* Ensure it's on top */
+    background-color: #333;
+    padding: 3px 0;
+    z-index: 1;
 }
 
 .news-container {
     height: calc(100vh - 122px);
     overflow-y: scroll;
 }
+
 .news-container::-webkit-scrollbar {
     display: none;
 }
@@ -132,7 +133,6 @@ body {
 
 /* Navbar */
 .navbar {
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,11 +148,8 @@ body {
 }
 
 .navbar-items a {
-    /* margin-left: 20px; */
     color: #212529;
-    /* Text color */
     font-weight: 600;
-    /* Padding to space the items */
     padding: 7px 15px;
     text-decoration: none;
 }
@@ -160,9 +157,7 @@ body {
 /* Change the link color when hovering */
 .navbar-items a:hover {
     background-color: #ddd;
-    /* Background color on hover */
     color: black;
-    /* Text color on hover */
 }
 
 .active {
@@ -211,7 +206,7 @@ body {
     font-weight: 800;
 }
 
-#main-content{
+#main-content {
     height: calc(100vh - 118px);
     overflow-y: scroll;
 }
@@ -258,9 +253,10 @@ h1 {
 
 /* For Tablet View */
 @media screen and (max-width: 768px) {
-    .topbar{
+    .topbar {
         padding: 10px 28px;
     }
+
     .news-sidebar {
         width: 30%;
     }
@@ -269,7 +265,8 @@ h1 {
         font-size: 20px;
         padding: 5px 0;
     }
-    #main-content{
+
+    #main-content {
         height: calc(100vh - 124px);
     }
 
@@ -320,7 +317,7 @@ h1 {
         letter-spacing: 2px;
     }
 
-    .news-sidebar{
+    .news-sidebar {
         height: calc(100vh - 76px);
     }
 
@@ -343,7 +340,7 @@ h1 {
         font-size: 19px;
     }
 
-    .navbar{
+    .navbar {
         flex-direction: column;
         align-items: normal;
     }
@@ -352,7 +349,7 @@ h1 {
         font-size: 9px;
     }
 
-    .search-container{
+    .search-container {
         justify-content: space-between;
         border-radius: 5px;
         margin: 4px;
@@ -365,7 +362,7 @@ h1 {
         font-weight: 600px;
     }
 
-    #main-content{
+    #main-content {
         height: calc(100vh - 142.8px);
     }
 }
@@ -374,23 +371,27 @@ h1 {
     .topbar {
         padding: 15px 10px;
     }
-    .logo{
+
+    .logo {
         width: 170px;
         height: 25px;
     }
+
     .navbar-items a {
         font-size: 7px;
     }
 }
+
 @media screen and (max-width: 320px) {
     .topbar {
         width: 97%;
     }
+
     .news-sidebar {
         height: calc(100vh - 56px);
     }
-    #main-content{
+
+    #main-content {
         height: calc(100vh - 120.8px);
     }
 }
-
