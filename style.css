@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #555;
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -39,9 +40,7 @@ body {
 
 
 .logo {
-    max-height: 30px;
-    font-size: larger;
-    font-weight: 800;
+    height: 42px;
     /* Adjust the height as needed */
 }
 
@@ -75,16 +74,13 @@ body {
     padding: 10px;
 }
 .main-section{
-    height: calc(100vh - 72px);
+    height: calc(100vh - 80px);
 }
     
 /* sidebar */
 .news-sidebar {
-    height: calc(100vh - 80px);
-    overflow-y: scroll;
     background-color: #333;
     color: #fff;
-    /* Text color */
     padding: 2px 20px;
     width: 20%;
     box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
@@ -98,6 +94,10 @@ body {
     z-index: 1; /* Ensure it's on top */
 }
 
+.news-container {
+    height: calc(100vh - 122px);
+    overflow-y: scroll;
+}
 .news-container::-webkit-scrollbar {
     display: none;
 }
@@ -137,7 +137,6 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    /* Background color */
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -156,7 +155,6 @@ body {
     /* Padding to space the items */
     padding: 7px 15px;
     text-decoration: none;
-    /* Remove underline */
 }
 
 /* Change the link color when hovering */
@@ -241,7 +239,6 @@ h1 {
     align-items: center;
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -261,6 +258,9 @@ h1 {
 
 /* For Tablet View */
 @media screen and (max-width: 768px) {
+    .topbar{
+        padding: 10px 28px;
+    }
     .news-sidebar {
         width: 30%;
     }
@@ -268,6 +268,9 @@ h1 {
     .news-sidebar h2 {
         font-size: 20px;
         padding: 5px 0;
+    }
+    #main-content{
+        height: calc(100vh - 124px);
     }
 
     .section {
@@ -295,11 +298,11 @@ h1 {
 /* For Mobile Portrait View */
 @media screen and (max-width: 480px) {
     .topbar {
-        padding: 15px 25px;
+        padding: 15px 12px;
     }
 
     .logo {
-        font-size: medium;
+        height: 22px;
     }
 
     .fa-whatsapp {
@@ -317,11 +320,9 @@ h1 {
         letter-spacing: 2px;
     }
 
-
-    /* .news-sidebar {
-        height: calc(100vh - 80px);
-        padding: 5px;
-    } */
+    .news-sidebar{
+        height: calc(100vh - 76px);
+    }
 
     .news-sidebar h2 {
         top: -5px;
@@ -370,7 +371,26 @@ h1 {
 }
 
 @media screen and (max-width: 375px) {
+    .topbar {
+        padding: 15px 10px;
+    }
+    .logo{
+        width: 170px;
+        height: 25px;
+    }
     .navbar-items a {
         font-size: 7px;
     }
 }
+@media screen and (max-width: 320px) {
+    .topbar {
+        width: 97%;
+    }
+    .news-sidebar {
+        height: calc(100vh - 56px);
+    }
+    #main-content{
+        height: calc(100vh - 120.8px);
+    }
+}
+
