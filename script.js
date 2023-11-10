@@ -88,18 +88,21 @@ const performSearch = () => {
         const sectionName = container.getAttribute("data-section");
         const paragraphs = container.querySelectorAll("p");
 
+        paragraphs.forEach(paragraph => {
+            const text = paragraph.textContent.toLowerCase();
+            const regex = new RegExp(searchText, "gi");
+            const highlightedText = text.replace(
+                regex,
+                (match) => `<span class="highlighted">${match}</span>`
+            );
+            paragraph.innerHTML = highlightedText;
+        });
+
         for (let i = 0; i < paragraphs.length; i++) {
             const text = paragraphs[i].textContent.toLowerCase();
 
             if (text.includes(searchText)) {
                 paragraphs[i].scrollIntoView({ behavior: "smooth" });
-
-                const regex = new RegExp(searchText, "gi");
-                const highlightedText = paragraphs[i].innerHTML.replace(
-                    regex,
-                    (match) => `<span class="highlighted">${match}</span>`
-                );
-                paragraphs[i].innerHTML = highlightedText;
                 resultFound = true;
             }
         }
