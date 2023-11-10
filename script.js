@@ -111,7 +111,6 @@ const performSearch = () => {
             notFoundMessage.style.display = "none";
         }, 3000);
     }
-    scrollTo(0, 0)
 };
 
 // Event listener for the search button click
