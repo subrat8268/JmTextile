@@ -370,6 +370,12 @@ h1 {
         width: 170px;
         height: 25px;
     }
+    .news-sidebar h2 {
+        font-size: 8px;
+    }
+    h1 {
+        font-size: 14px;
+    }
 
     .navbar-items a {
         padding: 10px 8px;
