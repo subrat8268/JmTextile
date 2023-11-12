@@ -130,7 +130,7 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space between;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -382,10 +382,10 @@ h1 {
         font-size: 7px;
     }
     .news-container {
-        height: calc(100vh - 130px);
+         height: calc(100vh - 102.8px);
     }
     #main-content {
-        height: calc(100vh - 150.8px);
+        height: calc(100vh - 149.8px);
     }
 }
 
@@ -395,7 +395,7 @@ h1 {
     }
 
     .news-sidebar {
-        height: calc(100vh - 52px);
+        height: calc(100vh - 56px);
     }
 
     .news-container {
@@ -403,6 +403,6 @@ h1 {
     }
 
     #main-content {
-        height: calc(100vh - 116.8px);
+        height: calc(100vh - 130.8px);
     }
 }
