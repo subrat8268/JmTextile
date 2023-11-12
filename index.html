@@ -11,54 +11,58 @@
     ></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav class="topbar">
-      <a href="index.html"><img class="logo" src="logo.png" alt=""></a>
-      <a href="javascript:void(0);" id="whatsappButton" target="_blank" class="whatsapp">
-        <i class="fa-brands fa-whatsapp"></i>
-        <div>
-          <p>Whatsapp Us</p>
-          <p>987654321</p>
+
+    <div class="container">
+      <!-- Navigation Bar -->
+      <nav class="topbar">
+        <a href="index.html"><img class="logo" src="logo.png" alt=""></a>
+        <a href="javascript:void(0);" id="whatsappButton" target="_blank" class="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <p>Whatsapp Us</p>
+            <p>987654321</p>
+          </div>
+        </a>
+      </nav>
+  
+      <div class="main-section">
+  
+        <div class="news-sidebar style-4">
+          
         </div>
-      </a>
-    </nav>
-
-    <div class="main-section">
-
-      <div class="news-sidebar style-4">
-        
+       
+        <!-- Section = navbar + page -->
+        <div class="section">
+          <!-- Navbar -->
+          <nav class="navbar">
+            <div class="navbar-items">
+              <a href="./pages/home.html" class="active">Home</a>
+              <a href="./pages/product.html">Products</a>
+              <a href="./pages/services.html">Services</a>
+              <a href="./pages/blog.html">Blog</a>
+              <a href="./pages/contact.html">Contact</a>
+            </div>
+            <div class="search-container">
+              <input
+                id="search-input"
+                type="text"
+                placeholder="Search.."
+                name="search"
+              />
+              <button id="search-button" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <div id="not-found-message" class="not-found-message">
+                Not Found
+           `  </div>
+            </div>
+          </nav>
+  
+          <div id="main-content" class="style-4">
+  
+          </div>
       </div>
-     
-      <!-- Section = navbar + page -->
-      <div class="section">
-        <!-- Navbar -->
-        <nav class="navbar">
-          <div class="navbar-items">
-            <a href="./pages/home.html" class="active">Home</a>
-            <a href="./pages/product.html">Products</a>
-            <a href="./pages/services.html">Services</a>
-            <a href="./pages/blog.html">Blog</a>
-            <a href="./pages/contact.html">Contact</a>
-          </div>
-          <div class="search-container">
-            <input
-              id="search-input"
-              type="text"
-              placeholder="Search.."
-              name="search"
-            />
-            <button id="search-button" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <div id="not-found-message" class="not-found-message">
-              Not Found
-         `  </div>
-          </div>
-        </nav>
 
-        <div id="main-content" class="style-4">
-
-        </div>
     </div>
 
  
